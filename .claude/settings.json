@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node screenshot.mjs http://127.0.0.1:3000)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 bigger-portrait)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 hero-layout)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 hero-top --viewport 1440x900)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 shifted-left)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 hero-bigger-photos)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 hero-desktop --viewport 1440x900)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 dog-spacing)",
+      "Bash(pkill -f \"node serve.mjs\")"
+    ]
+  }
+}
