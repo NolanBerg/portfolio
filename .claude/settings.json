@@ -9,7 +9,9 @@
       "Bash(node screenshot.mjs http://127.0.0.1:3000 hero-bigger-photos)",
       "Bash(node screenshot.mjs http://127.0.0.1:3000 hero-desktop --viewport 1440x900)",
       "Bash(node screenshot.mjs http://127.0.0.1:3000 dog-spacing)",
-      "Bash(pkill -f \"node serve.mjs\")"
+      "Bash(pkill -f \"node serve.mjs\")",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 hero-float)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 projects-section)"
     ]
   }
 }

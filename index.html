@@ -47,8 +47,8 @@
 
     /* Float animation for dog photos */
     @keyframes float {
-      0%, 100% { transform: translateY(0) rotate(3deg); }
-      50% { transform: translateY(-8px) rotate(3deg); }
+      0%, 100% { transform: translateY(0) rotate(var(--float-rot, 3deg)); }
+      50% { transform: translateY(-8px) rotate(var(--float-rot, 3deg)); }
     }
     .float-anim { animation: float 4s ease-in-out infinite; }
 
@@ -181,17 +181,15 @@
 
         <!-- Dog pictures stacked -->
         <div class="flex flex-col gap-4 lg:gap-5">
-          <div class="relative w-40 h-48 lg:w-52 lg:h-64 rounded-2xl overflow-hidden -rotate-2
-                      transition-transform duration-300 spring hover:rotate-0"
-               style="box-shadow: 0 4px 12px rgba(42,31,20,0.15), 0 1px 4px rgba(232,147,12,0.1);">
-            <img src="./78574CFD-923E-4D00-A0A9-6A874D951BF1_1_105_c.jpeg"
+          <div class="relative w-40 h-48 lg:w-52 lg:h-64 rounded-2xl overflow-hidden border-4 border-cream float-anim"
+               style="--float-rot: -2deg; box-shadow: 0 4px 12px rgba(42,31,20,0.15), 0 1px 4px rgba(232,147,12,0.1);">
+            <img src="./783FD6B5-69DB-45FE-8DA8-9B2E2F117850_1_201_a.jpeg"
                  alt="Nolan's dog"
                  class="w-full h-full object-cover" />
             <div class="absolute inset-0 bg-gradient-to-t from-bark/20 via-transparent to-transparent"></div>
           </div>
-          <div class="relative w-40 h-48 lg:w-52 lg:h-64 rounded-2xl overflow-hidden rotate-1
-                      transition-transform duration-300 spring hover:rotate-0"
-               style="box-shadow: 0 4px 12px rgba(42,31,20,0.15), 0 1px 4px rgba(232,147,12,0.1);">
+          <div class="relative w-40 h-48 lg:w-52 lg:h-64 rounded-2xl overflow-hidden border-4 border-cream float-anim"
+               style="--float-rot: 1deg; animation-delay: -2s; box-shadow: 0 4px 12px rgba(42,31,20,0.15), 0 1px 4px rgba(232,147,12,0.1);">
             <img src="./E7E4F940-1FAC-46CE-BFA5-366405C7D1CF_1_105_c.jpeg"
                  alt="Nolan's dog"
                  class="w-full h-full object-cover" />
@@ -218,11 +216,22 @@
         </p>
       </div>
 
-      <!-- German Shepherd mascot photo -->
+      <!-- Dog mascot photo — left -->
+      <div class="hidden lg:block absolute -top-8 -left-24 xl:-left-16 z-10">
+        <div class="relative w-36 h-52 overflow-hidden rounded-2xl border-4 border-cream float-anim rotate-3" style="animation-delay: -1s;
+             box-shadow: 0 4px 16px rgba(42,31,20,0.18), 0 1px 4px rgba(232,147,12,0.1);">
+          <img src="./78574CFD-923E-4D00-A0A9-6A874D951BF1_1_105_c.jpeg"
+               alt="Nolan's Goldendoodle"
+               class="w-full h-full object-cover object-top" />
+          <div class="absolute inset-0 bg-gradient-to-t from-bark/20 via-transparent to-transparent"></div>
+        </div>
+      </div>
+
+      <!-- Dog mascot photo — right -->
       <div class="hidden lg:block absolute -top-8 -right-24 xl:-right-16 z-10">
         <div class="relative w-36 h-52 overflow-hidden rounded-2xl border-4 border-cream float-anim -rotate-3" style="animation-delay: -2s;
              box-shadow: 0 4px 16px rgba(42,31,20,0.18), 0 1px 4px rgba(232,147,12,0.1);">
-          <img src="./E7E4F940-1FAC-46CE-BFA5-366405C7D1CF_1_105_c.jpeg"
+          <img src="./0E3060E4-5362-483E-8DB0-4327C9331BDD_1_105_c.jpeg"
                alt="Nolan's German Shepherd"
                class="w-full h-full object-cover object-top" />
           <div class="absolute inset-0 bg-gradient-to-t from-bark/20 via-transparent to-transparent"></div>
