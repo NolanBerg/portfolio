@@ -11,7 +11,24 @@
       "Bash(node screenshot.mjs http://127.0.0.1:3000 dog-spacing)",
       "Bash(pkill -f \"node serve.mjs\")",
       "Bash(node screenshot.mjs http://127.0.0.1:3000 hero-float)",
-      "Bash(node screenshot.mjs http://127.0.0.1:3000 projects-section)"
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 projects-section)",
+      "Bash(node serve.mjs)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 before)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 final)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 cream-panel)",
+      "Bash(node /tmp/screenshot-hero.mjs)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 fit)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 ocean-theme)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 no-panel)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 new-photo)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 projects-bg)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 nav-colors)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 contact-bg)",
+      "Bash(sed -n '430,440p' /Users/nolanb/Projects/portfolio/index.html)",
+      "Bash(sed -n '477,485p' /Users/nolanb/Projects/portfolio/index.html)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 footer)",
+      "Bash(node /tmp/screenshot-social.mjs)",
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 social)"
     ]
   }
 }

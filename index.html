@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nolan B. — Developer & Dog Dad</title>
+  <title>Nolan B. — Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -21,6 +21,10 @@
             moss: '#4A6741',
             charcoal: '#3D3630',
             paw_pink: '#F0A8B8',
+            ocean: '#1A6878',
+            coral_pink: '#A85858',
+            rust_coral: '#7A3020',
+            seagrass: '#3A6020',
           },
           fontFamily: {
             display: ['"Playfair Display"', 'serif'],
@@ -77,10 +81,10 @@
 <body class="bg-cream text-charcoal font-body leading-relaxed">
 
   <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
-  <nav class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-cream/80 border-b border-sand">
+  <nav class="fixed top-0 inset-x-0 z-50 backdrop-blur-md border-b border-sand" style="background-color: rgba(252, 250, 246, 0.88);">
     <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
       <!-- Logo -->
-      <a href="#" class="font-display font-black text-xl text-bark tracking-tight
+      <a href="#" class="font-display font-black text-xl text-ocean tracking-tight
                          transition-transform duration-150 spring hover:scale-105 active:scale-95">
         Nolan B.
       </a>
@@ -88,23 +92,23 @@
       <div class="flex items-center gap-2">
         <!-- About -->
         <a href="#about"
-           class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium text-bark
+           class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium text-coral_pink
                   transition-transform duration-150 spring
-                  hover:bg-amber_core/10 hover:scale-105 active:scale-95">
+                  hover:bg-coral_pink/10 hover:scale-105 active:scale-95">
           About
         </a>
-        <!-- Projects — German Shepherd icon -->
+        <!-- Projects -->
         <a href="#projects"
-           class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium text-bark
+           class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium text-rust_coral
                   transition-transform duration-150 spring
-                  hover:bg-amber_core/10 hover:scale-105 active:scale-95">
+                  hover:bg-rust_coral/10 hover:scale-105 active:scale-95">
           Projects
         </a>
-        <!-- Contact — Golden Doodle icon -->
+        <!-- Contact -->
         <a href="#contact"
-           class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium text-bark
+           class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium text-ocean
                   transition-transform duration-150 spring
-                  hover:bg-amber_core/10 hover:scale-105 active:scale-95">
+                  hover:bg-ocean/10 hover:scale-105 active:scale-95">
           Contact
         </a>
       </div>
@@ -113,120 +117,97 @@
 
   <!-- ═══════════════════ HERO / ABOUT ═══════════════════ -->
   <section id="about" class="relative min-h-screen pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden grain">
-    <!-- Background gradient -->
-    <div class="absolute inset-0 -z-10"
-         style="background: radial-gradient(ellipse at 30% 20%, #FFF8EE 0%, #F2E6D0 60%, #EDD9BB 100%);">
+    <!-- Background image -->
+    <div class="absolute inset-0 -z-10">
+      <img src="./wp2636472-4120515813.jpg" class="w-full h-full object-cover" alt="" />
+      <div class="absolute inset-0" style="background: rgba(42,31,20,0.15);"></div>
     </div>
-
     <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-stretch gap-12 lg:gap-10">
       <!-- Left: Text + scroll indicator -->
       <div class="flex-1 flex flex-col justify-between order-2 lg:order-1">
         <div class="text-center lg:text-left">
-          <h1 class="font-display font-black text-5xl lg:text-6xl text-bark tracking-tight" style="letter-spacing:-0.03em;">
+          <h1 class="font-display font-black text-5xl lg:text-6xl text-cream tracking-tight" style="letter-spacing:-0.03em;">
             Hey, I'm Nolan
           </h1>
-          <p class="mt-4 text-lg lg:text-xl text-terra font-medium" style="line-height:1.5;">
-            Developer. Dog dad. Debugger of both code and chewed-up shoes.
+          <p class="mt-4 text-lg lg:text-xl text-cream/80 font-medium" style="line-height:1.5;">
+            Developer. College Athlete. Diet Coke Enthusiast.
           </p>
-          <p class="mt-6 text-charcoal max-w-lg mx-auto lg:mx-0" style="line-height:1.7;">
-            I'm a software engineer who loves building things that make people's lives a little easier
-            (and occasionally building things my dogs immediately try to destroy). When I'm not coding,
-            you'll find me on a trail with my two best buds.
+          <p class="mt-6 text-cream/70 max-w-lg mx-auto lg:mx-0" style="line-height:1.7;">
+            I'm a software engineer who loves building things that make people's lives a little easier.
+            When I'm not coding, you'll find me at Chipotle or playing hockey at University of Wyoming.
           </p>
           <div class="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
             <a href="#projects"
-               class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-cream bg-amber_core
+               class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-cream bg-coral_pink
                       transition-transform duration-150 spring
                       hover:scale-105 active:scale-95"
-               style="box-shadow: 0 4px 12px rgba(232,147,12,0.3), 0 1px 3px rgba(42,31,20,0.1);">
+               style="box-shadow: 0 4px 12px rgba(168,88,88,0.35), 0 1px 3px rgba(42,31,20,0.1);">
               See My Work
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </a>
             <a href="#contact"
-               class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-terra
-                      border-2 border-terra/30
+               class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-cream bg-ocean
                       transition-transform duration-150 spring
-                      hover:scale-105 hover:border-terra/60 active:scale-95">
+                      hover:scale-105 active:scale-95"
+               style="box-shadow: 0 4px 12px rgba(26,104,120,0.35), 0 1px 3px rgba(42,31,20,0.1);">
               Get in Touch
             </a>
           </div>
         </div>
 
         <!-- Scroll down indicator -->
-        <a href="#projects" class="hidden lg:flex items-center gap-2 text-terra/60 mt-auto pt-12 pb-4
-                                   transition-transform duration-300 spring hover:translate-y-1 group">
-          <span class="text-sm font-medium tracking-wide uppercase">Scroll down</span>
-          <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <a href="#projects" class="hidden lg:flex items-center gap-2 text-cream/70 mt-auto pt-12 pb-4
+                                   transition-transform duration-300 spring hover:translate-y-1 group font-semibold"
+           style="">
+          <span class="text-sm tracking-wide uppercase">Scroll down</span>
+          <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </a>
       </div>
 
-      <!-- Right: Portrait + Dog pictures -->
-      <div class="flex-shrink-0 order-1 lg:order-2 flex flex-row items-center gap-6 lg:gap-10">
-        <!-- Portrait (large) -->
-        <div class="relative">
-          <div class="relative w-72 h-[22rem] lg:w-[22rem] lg:h-[34rem] rounded-2xl overflow-hidden rotate-2
-                      transition-transform duration-300 spring hover:rotate-0"
-               style="box-shadow: 0 4px 6px rgba(232,147,12,0.1), 0 12px 24px rgba(42,31,20,0.15);">
-            <img src="./7EB823AE-AA1B-4115-BAD1-7CE7AF9CC383_1_201_a.jpeg"
-                 alt="Nolan's portrait"
-                 class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-t from-bark/40 via-transparent to-transparent"></div>
-            <div class="absolute inset-0 bg-amber_core/5 mix-blend-multiply"></div>
-          </div>
-        </div>
-
-        <!-- Dog pictures stacked -->
-        <div class="flex flex-col gap-4 lg:gap-5">
-          <div class="relative w-40 h-48 lg:w-52 lg:h-64 rounded-2xl overflow-hidden border-4 border-cream float-anim"
-               style="--float-rot: -2deg; box-shadow: 0 4px 12px rgba(42,31,20,0.15), 0 1px 4px rgba(232,147,12,0.1);">
-            <img src="./783FD6B5-69DB-45FE-8DA8-9B2E2F117850_1_201_a.jpeg"
-                 alt="Nolan's dog"
-                 class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-t from-bark/20 via-transparent to-transparent"></div>
-          </div>
-          <div class="relative w-40 h-48 lg:w-52 lg:h-64 rounded-2xl overflow-hidden border-4 border-cream float-anim"
-               style="--float-rot: 1deg; animation-delay: -2s; box-shadow: 0 4px 12px rgba(42,31,20,0.15), 0 1px 4px rgba(232,147,12,0.1);">
-            <img src="./E7E4F940-1FAC-46CE-BFA5-366405C7D1CF_1_105_c.jpeg"
-                 alt="Nolan's dog"
-                 class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-t from-bark/20 via-transparent to-transparent"></div>
-          </div>
+      <!-- Right: Portrait -->
+      <div class="flex-shrink-0 flex items-center justify-center order-1 lg:order-2">
+        <div class="w-56 h-72 lg:w-64 lg:h-80 rounded-2xl overflow-hidden"
+             style="border: 5px solid rgba(252,250,246,0.95); box-shadow: 0 4px 16px rgba(42,31,20,0.18);">
+          <img src="./69712E9F-C201-4BC3-B018-CABECA61439B_1_201_a.jpeg"
+               alt="Nolan's portrait"
+               class="w-full h-full object-cover" />
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- ═══════════════════ PROJECTS ═══════════════════ -->
   <section id="projects" class="relative py-20 lg:py-28 overflow-visible grain">
-    <div class="absolute inset-0 -z-10 bg-sand"></div>
+    <div class="absolute inset-0 -z-10 bg-cream"></div>
 
     <div class="max-w-6xl mx-auto px-6 relative">
       <!-- Heading -->
       <div class="text-center mb-14">
-        <h2 class="font-display font-black text-4xl lg:text-5xl text-bark tracking-tight inline-flex items-center gap-3"
+        <h2 class="font-display font-black text-4xl lg:text-5xl text-ocean tracking-tight inline-flex items-center gap-3"
             style="letter-spacing:-0.03em;">
           Things I've Built
         </h2>
         <p class="mt-4 text-charcoal/70 max-w-xl mx-auto" style="line-height:1.7;">
-          A few projects I'm proud of (and that survived my German Shepherd's quality assurance process).
+          A few projects I'm proud of — each one solving a real problem.
         </p>
       </div>
 
       <!-- Project Cards Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
 
-        <!-- Card 1 -->
-        <div class="group bg-cream rounded-2xl overflow-hidden
+        <!-- Card 1 — ocean -->
+        <div class="group bg-cream rounded-2xl overflow-hidden border-t-4 border-ocean
                     transition-transform duration-200 spring hover:-translate-y-1"
-             style="box-shadow: 0 2px 4px rgba(196,85,45,0.06), 0 8px 16px rgba(42,31,20,0.08);">
+             style="box-shadow: 0 2px 4px rgba(26,104,120,0.08), 0 8px 20px rgba(26,104,120,0.12);">
           <div class="relative h-44 overflow-hidden">
-            <img src="https://placehold.co/600x400/F2E6D0/3D3630?text=Dashboard" alt="Project thumbnail"
+            <img src="https://placehold.co/600x400/1A6878/FFF8EE?text=Dashboard" alt="Project thumbnail"
                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-gradient-to-t from-bark/50 via-bark/10 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-ocean/60 via-ocean/10 to-transparent"></div>
           </div>
           <div class="p-6">
             <h3 class="font-display font-bold text-lg text-bark">Fetch API Dashboard</h3>
@@ -234,10 +215,10 @@
               Real-time analytics dashboard with interactive charts and customizable widgets.
             </p>
             <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber_core/10 text-terra">React</span>
-              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber_core/10 text-terra">TypeScript</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-ocean/10 text-ocean">React</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-ocean/10 text-ocean">TypeScript</span>
             </div>
-            <a href="#" class="group/link mt-4 inline-flex items-center gap-1 text-sm font-semibold text-amber_core
+            <a href="#" class="group/link mt-4 inline-flex items-center gap-1 text-sm font-semibold text-ocean
                               transition-transform duration-150">
               View Project
               <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -247,25 +228,25 @@
           </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="group bg-cream rounded-2xl overflow-hidden
+        <!-- Card 2 — coral_pink -->
+        <div class="group bg-cream rounded-2xl overflow-hidden border-t-4 border-coral_pink
                     transition-transform duration-200 spring hover:-translate-y-1"
-             style="box-shadow: 0 2px 4px rgba(196,85,45,0.06), 0 8px 16px rgba(42,31,20,0.08);">
+             style="box-shadow: 0 2px 4px rgba(168,88,88,0.08), 0 8px 20px rgba(168,88,88,0.12);">
           <div class="relative h-44 overflow-hidden">
-            <img src="https://placehold.co/600x400/E8930C/FFF8EE?text=Browse" alt="Project thumbnail"
+            <img src="https://placehold.co/600x400/A85858/FFF8EE?text=Browse" alt="Project thumbnail"
                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-gradient-to-t from-bark/50 via-bark/10 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-coral_pink/60 via-coral_pink/10 to-transparent"></div>
           </div>
           <div class="p-6">
-            <h3 class="font-display font-bold text-lg text-bark">Bark & Browse</h3>
+            <h3 class="font-display font-bold text-lg text-bark">Shop & Browse</h3>
             <p class="mt-2 text-sm text-charcoal/70" style="line-height:1.7;">
-              E-commerce platform for pet lovers with real-time inventory and smart recommendations.
+              E-commerce platform with real-time inventory management and smart product recommendations.
             </p>
             <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber_core/10 text-terra">Next.js</span>
-              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber_core/10 text-terra">Tailwind</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-coral_pink/10 text-coral_pink">Next.js</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-coral_pink/10 text-coral_pink">Tailwind</span>
             </div>
-            <a href="#" class="group/link mt-4 inline-flex items-center gap-1 text-sm font-semibold text-amber_core
+            <a href="#" class="group/link mt-4 inline-flex items-center gap-1 text-sm font-semibold text-coral_pink
                               transition-transform duration-150">
               View Project
               <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -275,25 +256,25 @@
           </div>
         </div>
 
-        <!-- Card 3 -->
-        <div class="group bg-cream rounded-2xl overflow-hidden
+        <!-- Card 3 — rust_coral -->
+        <div class="group bg-cream rounded-2xl overflow-hidden border-t-4 border-rust_coral
                     transition-transform duration-200 spring hover:-translate-y-1"
-             style="box-shadow: 0 2px 4px rgba(196,85,45,0.06), 0 8px 16px rgba(42,31,20,0.08);">
+             style="box-shadow: 0 2px 4px rgba(122,48,32,0.08), 0 8px 20px rgba(122,48,32,0.12);">
           <div class="relative h-44 overflow-hidden">
-            <img src="https://placehold.co/600x400/4A6741/FFF8EE?text=Tracker" alt="Project thumbnail"
+            <img src="https://placehold.co/600x400/7A3020/FFF8EE?text=Tracker" alt="Project thumbnail"
                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-gradient-to-t from-bark/50 via-bark/10 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-rust_coral/60 via-rust_coral/10 to-transparent"></div>
           </div>
           <div class="p-6">
-            <h3 class="font-display font-bold text-lg text-bark">Paw Print Tracker</h3>
+            <h3 class="font-display font-bold text-lg text-bark">Activity Tracker</h3>
             <p class="mt-2 text-sm text-charcoal/70" style="line-height:1.7;">
-              GPS-powered activity tracker for pets with route mapping and health insights.
+              GPS-powered activity tracker with route mapping, analytics, and health insights.
             </p>
             <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber_core/10 text-terra">Python</span>
-              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber_core/10 text-terra">FastAPI</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-rust_coral/10 text-rust_coral">Python</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-rust_coral/10 text-rust_coral">FastAPI</span>
             </div>
-            <a href="#" class="group/link mt-4 inline-flex items-center gap-1 text-sm font-semibold text-amber_core
+            <a href="#" class="group/link mt-4 inline-flex items-center gap-1 text-sm font-semibold text-rust_coral
                               transition-transform duration-150">
               View Project
               <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -303,25 +284,25 @@
           </div>
         </div>
 
-        <!-- Card 4 -->
-        <div class="group bg-cream rounded-2xl overflow-hidden
+        <!-- Card 4 — seagrass -->
+        <div class="group bg-cream rounded-2xl overflow-hidden border-t-4 border-seagrass
                     transition-transform duration-200 spring hover:-translate-y-1"
-             style="box-shadow: 0 2px 4px rgba(196,85,45,0.06), 0 8px 16px rgba(42,31,20,0.08);">
+             style="box-shadow: 0 2px 4px rgba(58,96,32,0.08), 0 8px 20px rgba(58,96,32,0.12);">
           <div class="relative h-44 overflow-hidden">
-            <img src="https://placehold.co/600x400/C4552D/FFF8EE?text=Classify" alt="Project thumbnail"
+            <img src="https://placehold.co/600x400/3A6020/FFF8EE?text=Classify" alt="Project thumbnail"
                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-gradient-to-t from-bark/50 via-bark/10 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-seagrass/60 via-seagrass/10 to-transparent"></div>
           </div>
           <div class="p-6">
-            <h3 class="font-display font-bold text-lg text-bark">Good Boy Classifier</h3>
+            <h3 class="font-display font-bold text-lg text-bark">Image Classifier</h3>
             <p class="mt-2 text-sm text-charcoal/70" style="line-height:1.7;">
-              ML model that identifies dog breeds from photos. Spoiler: they're all good boys.
+              ML model that classifies images with high accuracy using a custom-trained neural network.
             </p>
             <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber_core/10 text-terra">ML</span>
-              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber_core/10 text-terra">PyTorch</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-seagrass/10 text-seagrass">ML</span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-seagrass/10 text-seagrass">PyTorch</span>
             </div>
-            <a href="#" class="group/link mt-4 inline-flex items-center gap-1 text-sm font-semibold text-amber_core
+            <a href="#" class="group/link mt-4 inline-flex items-center gap-1 text-sm font-semibold text-seagrass
                               transition-transform duration-150">
               View Project
               <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -331,78 +312,19 @@
           </div>
         </div>
 
-        <!-- Card 5 -->
-        <div class="group bg-cream rounded-2xl overflow-hidden
-                    transition-transform duration-200 spring hover:-translate-y-1"
-             style="box-shadow: 0 2px 4px rgba(196,85,45,0.06), 0 8px 16px rgba(42,31,20,0.08);">
-          <div class="relative h-44 overflow-hidden">
-            <img src="https://placehold.co/600x400/3D3630/E8930C?text=IoT" alt="Project thumbnail"
-                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-gradient-to-t from-bark/50 via-bark/10 to-transparent"></div>
-          </div>
-          <div class="p-6">
-            <h3 class="font-display font-bold text-lg text-bark">Treat Dispenser IoT</h3>
-            <p class="mt-2 text-sm text-charcoal/70" style="line-height:1.7;">
-              Smart treat dispenser you can trigger from anywhere. My dogs' favorite project.
-            </p>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber_core/10 text-terra">Raspberry Pi</span>
-              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber_core/10 text-terra">Node</span>
-            </div>
-            <a href="#" class="group/link mt-4 inline-flex items-center gap-1 text-sm font-semibold text-amber_core
-                              transition-transform duration-150">
-              View Project
-              <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="group bg-cream rounded-2xl overflow-hidden
-                    transition-transform duration-200 spring hover:-translate-y-1"
-             style="box-shadow: 0 2px 4px rgba(196,85,45,0.06), 0 8px 16px rgba(42,31,20,0.08);">
-          <div class="relative h-44 overflow-hidden">
-            <img src="https://placehold.co/600x400/F0A8B8/2A1F14?text=Routes" alt="Project thumbnail"
-                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-gradient-to-t from-bark/50 via-bark/10 to-transparent"></div>
-          </div>
-          <div class="p-6">
-            <h3 class="font-display font-bold text-lg text-bark">Walkies Route Planner</h3>
-            <p class="mt-2 text-sm text-charcoal/70" style="line-height:1.7;">
-              Plan dog-friendly walking routes with park ratings, water stations, and squirrel density maps.
-            </p>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber_core/10 text-terra">Maps API</span>
-              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber_core/10 text-terra">Vue</span>
-            </div>
-            <a href="#" class="group/link mt-4 inline-flex items-center gap-1 text-sm font-semibold text-amber_core
-                              transition-transform duration-150">
-              View Project
-              <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </a>
-          </div>
-        </div>
 
       </div>
 
-      <!-- Mobile German Shepherd photo -->
-      <div class="lg:hidden mt-12 flex justify-center">
-        <div class="w-32 h-48 overflow-hidden rounded-2xl border-4 border-cream float-anim rotate-2"
-             style="box-shadow: 0 4px 12px rgba(42,31,20,0.12);">
-          <img src="./E7E4F940-1FAC-46CE-BFA5-366405C7D1CF_1_105_c.jpeg"
-               alt="Nolan's German Shepherd"
-               class="w-full h-full object-cover object-top" />
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- ═══════════════════ CONTACT ═══════════════════ -->
-  <section id="contact" class="relative py-20 lg:py-28 bg-bark overflow-hidden">
+  <section id="contact" class="relative py-20 lg:py-28 overflow-hidden">
+    <!-- Background image -->
+    <div class="absolute inset-0 -z-10">
+      <img src="./0fd2ec66cd8c8143cb8b570110e1c134-2495074894.jpg" class="w-full h-full object-cover" alt="" />
+      <div class="absolute inset-0" style="background: rgba(42,31,20,0.55);"></div>
+    </div>
     <!-- Decorative paw prints -->
     <svg class="absolute top-12 left-12 w-12 h-12 text-cream/[0.05]" viewBox="0 0 24 24" fill="currentColor" style="animation: paw-drift 6s ease-in-out infinite;">
       <ellipse cx="7.5" cy="7" rx="2.2" ry="2.8" /><ellipse cx="16.5" cy="7" rx="2.2" ry="2.8" />
@@ -425,45 +347,45 @@
         Let's Chat
       </h2>
       <p class="mt-4 text-cream/60" style="line-height:1.7;">
-        I don't bite. My dogs might, though. (Just kidding, they're very good boys.)
+        I'm always open to new opportunities and interesting projects. Let's talk.
       </p>
 
       <!-- Contact Form -->
-      <form class="mt-10 space-y-5 text-left" onsubmit="event.preventDefault();">
+      <form class="mt-10 space-y-5 text-left" onsubmit="event.preventDefault(); window.location.href='mailto:nolanb912@gmail.com?subject='+encodeURIComponent(document.getElementById('name').value+' via portfolio')+'&body='+encodeURIComponent(document.getElementById('message').value);">
         <div>
           <label for="name" class="block text-sm font-medium text-cream/70 mb-1.5">Name</label>
           <input type="text" id="name" placeholder="Your name"
                  class="w-full px-4 py-3 rounded-xl bg-charcoal/50 border border-cream/10 text-cream
-                        placeholder:text-cream/30 focus:border-amber_core focus:outline-none
+                        placeholder:text-cream/30 focus:border-seagrass focus:outline-none
                         transition-colors duration-200" />
         </div>
         <div>
           <label for="email" class="block text-sm font-medium text-cream/70 mb-1.5">Email</label>
           <input type="email" id="email" placeholder="you@example.com"
                  class="w-full px-4 py-3 rounded-xl bg-charcoal/50 border border-cream/10 text-cream
-                        placeholder:text-cream/30 focus:border-amber_core focus:outline-none
+                        placeholder:text-cream/30 focus:border-seagrass focus:outline-none
                         transition-colors duration-200" />
         </div>
         <div>
           <label for="message" class="block text-sm font-medium text-cream/70 mb-1.5">Message</label>
-          <textarea id="message" rows="4" placeholder="Tell me about your project (or your dog)"
+          <textarea id="message" rows="4" placeholder="Tell me about your project"
                     class="w-full px-4 py-3 rounded-xl bg-charcoal/50 border border-cream/10 text-cream
-                           placeholder:text-cream/30 focus:border-amber_core focus:outline-none
+                           placeholder:text-cream/30 focus:border-seagrass focus:outline-none
                            transition-colors duration-200 resize-none"></textarea>
         </div>
         <button type="submit"
-                class="w-full py-3.5 rounded-xl font-semibold text-bark bg-amber_core
+                class="w-full py-3.5 rounded-xl font-semibold text-cream bg-coral_pink
                        transition-transform duration-150 spring
                        hover:scale-[1.02] active:scale-[0.98]"
-                style="box-shadow: 0 4px 12px rgba(232,147,12,0.35), 0 1px 3px rgba(42,31,20,0.1);">
+                style="box-shadow: 0 4px 12px rgba(168,88,88,0.4), 0 1px 3px rgba(42,31,20,0.1);">
           Send Message
         </button>
       </form>
 
       <!-- Social links -->
       <div class="mt-10 flex justify-center gap-4">
-        <a href="#" class="w-12 h-12 rounded-xl bg-charcoal/50 flex items-center justify-center text-cream/60
-                          transition-transform duration-150 spring hover:scale-110 hover:text-amber_core active:scale-95"
+        <a href="https://github.com/NolanBerg" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-xl bg-charcoal/50 border border-cream/10 flex items-center justify-center text-cream/60
+                          transition-all duration-150 spring hover:scale-110 hover:text-ocean hover:border-ocean active:scale-95"
            aria-label="GitHub">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483
@@ -477,15 +399,15 @@
                      C22 6.484 17.522 2 12 2z" />
           </svg>
         </a>
-        <a href="#" class="w-12 h-12 rounded-xl bg-charcoal/50 flex items-center justify-center text-cream/60
-                          transition-transform duration-150 spring hover:scale-110 hover:text-amber_core active:scale-95"
+        <a href="https://www.linkedin.com/in/nolan-berg-22007528b/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-xl bg-charcoal/50 border border-cream/10 flex items-center justify-center text-cream/60
+                          transition-all duration-150 spring hover:scale-110 hover:text-ocean hover:border-ocean active:scale-95"
            aria-label="LinkedIn">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
           </svg>
         </a>
-        <a href="mailto:hello@nolan.dev" class="w-12 h-12 rounded-xl bg-charcoal/50 flex items-center justify-center text-cream/60
-                          transition-transform duration-150 spring hover:scale-110 hover:text-amber_core active:scale-95"
+        <a href="mailto:nolanb912@gmail.com" class="w-12 h-12 rounded-xl bg-charcoal/50 border border-cream/10 flex items-center justify-center text-cream/60
+                          transition-all duration-150 spring hover:scale-110 hover:text-ocean hover:border-ocean active:scale-95"
            aria-label="Email">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -497,10 +419,13 @@
   </section>
 
   <!-- ═══════════════════ FOOTER ═══════════════════ -->
-  <footer class="bg-bark border-t border-cream/5 py-8">
+  <footer class="py-8 relative overflow-hidden" style="background: rgba(42,31,20,0.75);">
+    <div class="absolute inset-0 -z-10">
+      <img src="./0fd2ec66cd8c8143cb8b570110e1c134-2495074894.jpg" class="w-full h-full object-cover object-bottom" alt="" />
+    </div>
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <p class="text-cream/40 text-sm font-body">
-        Made with coffee, code, and two very good dogs.
+      <p class="text-sm font-body font-medium" style="color: rgba(255,248,238,0.75); text-shadow: 0 1px 6px rgba(42,31,20,0.6);">
+        Made with coffee and code.
       </p>
     </div>
   </footer>
