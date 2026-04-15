@@ -28,7 +28,11 @@
       "Bash(sed -n '477,485p' /Users/nolanb/Projects/portfolio/index.html)",
       "Bash(node screenshot.mjs http://127.0.0.1:3000 footer)",
       "Bash(node /tmp/screenshot-social.mjs)",
-      "Bash(node screenshot.mjs http://127.0.0.1:3000 social)"
+      "Bash(node screenshot.mjs http://127.0.0.1:3000 social)",
+      "Bash(grep -E \"\\\\.\\(config|rc|toml|yml|yaml|sh|env\\)$\")",
+      "Bash(ls /Users/nolanb/Projects/portfolio/*.png)",
+      "Bash(python3 -c \"import shutil; shutil.copy\\('Screenshot 2026-04-15 at 1.13.31 AM.png', 'pcubed-screenshot.png'\\)\")",
+      "Bash(python3 -c ' *)"
     ]
   }
 }
