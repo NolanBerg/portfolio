@@ -366,6 +366,7 @@
       </p>
 
       <!-- Contact Form -->
+      <div id="form-wrapper">
       <div id="form-success" class="hidden mt-10 py-6 rounded-xl bg-seagrass/20 border border-seagrass/30 text-center text-cream font-medium">
         Thanks! Your message was sent — I'll get back to you soon.
       </div>
@@ -401,6 +402,7 @@
           Send Message
         </button>
       </form>
+      </div>
 
       <script>
         document.getElementById('contact-form').addEventListener('submit', async function(e) {
@@ -414,6 +416,8 @@
           const data = await response.json();
 
           if (data.success) {
+            const wrapper = document.getElementById('form-wrapper');
+            wrapper.style.minHeight = this.offsetHeight + 'px';
             this.classList.add('hidden');
             document.getElementById('form-success').classList.remove('hidden');
           } else {
